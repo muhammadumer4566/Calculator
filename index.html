@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   
+    <div class="container">
+   <div class="calculator">
+    <form>
+        <div class="display">
+            <input type="text"  id="display" disabled>
+        </div>
+        <div>
+            <input type="button" value="AC" onclick="ClearDisplay()" class="operator">
+            <input type="button" value="DE" class="operator" onclick="numDelete()">
+            <input type="button" value="." onclick="showNum('.')" 
+            class="operator">
+            <input type="button" value="/" onclick="showNum('/')" 
+            class="operator">
+        </div>
+        <div>
+            <input type="button" value="7" onclick="showNum('7')">
+            <input type="button" value="8" onclick="showNum('8')">
+            <input type="button" value="9" onclick="showNum('9')">
+            <input type="button" value="*" onclick="showNum('*')" class="operator">
+        </div>
+        <div>
+            <input type="button" value="4" onclick="showNum('4')">
+            <input type="button" value="5" onclick="showNum('5')">
+            <input type="button" value="6" onclick="showNum('6')">
+            <input type="button" value="-" onclick="showNum('-')" class="operator">
+        </div>
+        <div>
+            <input type="button" value="1" onclick="showNum('1')">
+            <input type="button" value="2" onclick="showNum('2')">
+            <input type="button" value="3" onclick="showNum('3')">
+            <input type="button" value="+" onclick="showNum('+')" class="operator">
+        </div>
+        <div>
+            <input type="button" value="00" onclick="showNum('00')">
+            <input type="button" value="0" onclick="showNum('0')">
+            <input type="button" value="=" class="equal operator" onclick="showResult()">
+            
+        </div>
+    </form>
+   </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
